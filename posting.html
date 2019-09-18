@@ -36,7 +36,10 @@
           <a class="nav-link" href="professormain.html">초기화면</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="mypage.html">마이페이지</a>
+          <a class="nav-link" href="professormypage.html">마이페이지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="taapprove.html">TA 승인</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">도움말</a>
@@ -45,17 +48,16 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <h7 class="mb-0 text-white lh-100">소프트웨어공학과 교수 홍은지&nbsp&nbsp</h7>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그아웃</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='loginform.html'">로그아웃</button>
       </form>
     </div>
   </nav>
 
-
-  <div class="my-3 p-3 bg-white rounded shadow-sm">
-  <strong>&nbsp&nbsp DB 캡스톤디자인 &nbsp&nbsp&nbsp&nbsp</strong>
-  <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 홍은지 교수님 &nbsp&nbsp / &nbsp&nbsp 학생수 :26</small>
-  </div>
   <main role="main" class="main-container">
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <strong>&nbsp&nbsp DB 캡스톤디자인 &nbsp&nbsp&nbsp&nbsp</strong>
+    <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 홍은지 교수님 &nbsp&nbsp / &nbsp&nbsp 학생수 :26</small>
+    </div>
     <div class="row">
       <div class="col-md-3 order-md-1 mb-4">
         <div class="my-3 p-3 bg-white rounded shadow-sm">
@@ -64,7 +66,7 @@
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
               <div class="d-flex justify-content-between align-items-center w-100">
-                <button type="button" class="btn btn-block"><a href="professorlecture.html">과제 및 공지</a></button>
+                <button type="button" class="btn btn-block" onclick="location.href='professorlecture.html'">과제 및 공지</button>
               </div>
             </div>
           </div>
@@ -72,7 +74,7 @@
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
               <div class="d-flex justify-content-between align-items-center w-100">
-              <button type="button" class="btn btn-block"><a href="lecture3.html">강의 자료</a></button>
+                <button type="button" class="btn btn-block" onclick="location.href=''">강의 자료</button>
               </div>
             </div>
           </div>
@@ -80,7 +82,7 @@
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
               <div class="d-flex justify-content-between align-items-center w-100">
-                <button type="button" class="btn btn-block">학생 게시판</button>
+                <button type="button" class="btn btn-block" onclick="location.href=''">학생 게시판</button>
               </div>
             </div>
           </div>
@@ -103,13 +105,14 @@
           </select>
         </div>
         <hr>
+
           <form>
 
           <table class="table table-striped  text-center">
             <thead class="thead-light">
               <tr>
                 <th>번호</th>
-                <th>4</th>
+                <th style="width: 700px">4</th>
               </tr>
             </thead>
 
@@ -118,13 +121,13 @@
 
                 <tr>
                   <td>제목 </td>
-                  <td><input type="text" id="name" name="name"></td>
+                  <td><input type="text" id="name" name="name" style="width: 600px"></td>
                 </tr>
             </tbody>
             <tbody>
               <tr>
                 <td>내용</td>
-                <td><input type="text" id="ctt" name="ctt"></td>
+                <td><input type="text" id="ctt" name="ctt" style="width: 600px; height: 200px"></td>
 
               </tr>
             </tbody>
@@ -143,27 +146,30 @@
             <tbody>
               <tr>
                 <td>제출기한</td>
-                <td><input type="text" id="per" name="per"></td>
+                <td><input type="text" id="per" name="per" style="width: 250px"></td>
               </tr>
             </tbody>
             <tbody>
               <tr>
                 <td>연장기한</td>
-                <td><input type="text" id="per2" name="per2"></td>
+                <td><input type="text" id="per2" name="per2" style="width: 250px"></td>
               </tr>
             </tbody>
-            <tbody>
-              <tr>
-                <td>댓글: </td>
-                <td><input type="text" name="comment" id="comment">
-                        <button type="submit">입력</button>
-            </tbody>
-
           </table>
-          <button type="button" class="btn btn-outline-primary">등록</button>
-          <button type="button" class="btn btn-outline-primary">목록보기</button>
-          </div>
+              <table class = "table table-striped  text-center">
+                <thead>
+                  <tr>
+                    <td>&nbsp&nbsp댓글: </td>
+                    <td style="width:700px"><input type="text" name="comment" id="comment" style="width: 450px">
+                        <button type="submit">입력</button></td>
+                      </tr>
+                    </thead>
+                  </table>
 
+          <button type="button" class="btn btn-primary" style="width: 150px">등록</button>
+          <button type="button" class="btn btn-primary" onclick="location.href='professorlecture.html'" style="width: 150px">목록보기</button>
+
+          </div>
 
           </form>
         </div>
