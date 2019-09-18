@@ -46,7 +46,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <h7 class="mb-0 text-white lh-100">201732032 소프트웨어공학과 장은애&nbsp&nbsp</h7>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그아웃</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='loginform.html'">로그아웃</button>
         </form>
       </div>
     </nav>
@@ -102,6 +102,22 @@
         <div class="mb-3">
           <label for="address">전화번호<span class="text-muted">&nbsp(-없이 숫자만 입력해주세요.)</span></label>
           <input type="text" class="form-control" id="phonenumber" placeholder="01012341234" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="question">질문</label>
+          <input type="text" class="form-control" id="password2" placeholder="비밀번호 재발급을 위한 질문 예) 가장 좋아하는 음식" required>
+          <div class="invalid-feedback">
+            비밀번호 재발급을 위한 질문을 입력해주세요.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="answer">답</label>
+          <input type="text" class="form-control" id="password3" placeholder="패스워드 재발급을 위한 답    예) 치킨" required>
+          <div class="invalid-feedback">
+            비밀번호 재발급을 위한 답을 입력해주세요.
+          </div>
         </div>
 
         <div class="mb-3">
