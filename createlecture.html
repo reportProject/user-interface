@@ -47,8 +47,8 @@
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <h7 class="mb-0 text-white lh-100"> 소프트웨어공학과 교수 홍은지&nbsp&nbsp</h7>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">로그아웃</button>
+        <h7 class="mb-0 mx-2 text-white lh-100"> 소프트웨어공학과 교수 홍은지</h7>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='loginform.html'">로그아웃</button>
       </form>
     </div>
   </nav>
@@ -75,51 +75,43 @@
         </div>
       </div>
 
-
       <div class="col-md-9 order-md-2">
         <div class="my-3 p-3 bg-white rounded shadow-sm">
-
-      <form class="form">
-
-          <table class="table table-striped  ">
-
-
-            <tbody>
-
-
+          <form class="form">
+            <table class="table table-striped  ">
+              <thead>
                 <tr>
                   <td>강좌명 </td>
                   <td> <input type="text" name="comment" id="comment"></td>
                 </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>분류</td>
-                <td>
+              </thead>
+              <thead>
+                <tr>
+                  <td>분류</td>
+                  <td>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" name="jb-radio" id="jb-radio-1" class="custom-control-input">
+                      <label class="custom-control-label" for="jb-radio-1">전공</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input type="radio" name="jb-radio" id="jb-radio-2" class="custom-control-input">
+                      <label class="custom-control-label" for="jb-radio-2">교양</label>
+                    </div>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+            <div style="float: right; display:inline-block; width: 800px;">
+              <button class="btn btn-primary mx-2 my-sm-0" type="submit" style="width: 100px; float: right">강좌 개설</button>
+            </div>
+            <label>
 
-                  <div class="custom-control custom-radio">
-                    <input type="radio" name="jb-radio" id="jb-radio-1" class="custom-control-input">
-                    <label class="custom-control-label" for="jb-radio-1">전공</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" name="jb-radio" id="jb-radio-2" class="custom-control-input">
-                    <label class="custom-control-label" for="jb-radio-2">교양</label>
-                  </div>
-                </td>
-
-              </tr>
-
-
-          </table>
-          <button type="button" class="btn btn-primary btn-block">강좌 개설</button>
-          <button type="button" class="btn btn-primary btn-block" onclick="location.href='main3.html'">목록보기</button>
+              
+            </label>
+          </form>
         </div>
-
-
-        </form>
       </div>
     </div>
-
   </main>
 </body>
 
