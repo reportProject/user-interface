@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
 
-  <title>게시물 올리기</title>
+  <title>학생 게시물 올리기</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/offcanvas/">
 
@@ -25,7 +25,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 
-    <a class="navbar-brand mr-auto mr-lg-0" href="professormain.html">성공회대학교 과제제출시스템</a>
+    <a class="navbar-brand mr-auto mr-lg-0" href="main3.html">성공회대학교 과제제출시스템</a>
     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,13 +33,10 @@
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="professormain.html">초기화면</a>
+          <a class="nav-link" href="main3.html">초기화면</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="professormypage.html">마이페이지</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="taapprove.html">TA 승인</a>
+          <a class="nav-link" href="mypage.html">마이페이지</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">도움말</a>
@@ -47,16 +44,17 @@
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <h7 class="mb-0 text-white lh-100">소프트웨어공학과 교수 홍은지&nbsp&nbsp</h7>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='loginform.html'">로그아웃</button>
+        <h7 class="mb-0 mx-2 text-white lh-100">201732032 소프트웨어공학과 장은애</h7>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="location.href='loginform.html'">로그아웃</button>
       </form>
     </div>
   </nav>
 
+
   <main role="main" class="main-container">
     <div class="my-3 p-3 bg-white rounded shadow-sm">
-      <strong>&nbsp&nbsp DB 캡스톤디자인 &nbsp&nbsp&nbsp&nbsp</strong>
-      <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 홍은지 교수님 &nbsp&nbsp / &nbsp&nbsp 학생수 :26</small>
+    <strong>&nbsp&nbsp DB 캡스톤디자인 &nbsp&nbsp&nbsp&nbsp</strong>
+    <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 홍은지 교수님 &nbsp&nbsp / &nbsp&nbsp 학생수 :26</small>
     </div>
     <div class="row">
       <div class="col-md-3 order-md-1 mb-4">
@@ -91,76 +89,46 @@
 
       <div class="col-md-9 order-md-2">
         <div class="my-3 p-3 bg-white rounded shadow-sm">
-          <div class="my-2 ">
-            <select>
-              <optgroup label="전공">
-                <option>DB 캡스톤디자인</option>
-                <option>고급 웹프로그래밍2</option>
-                <option>모바일 프로그래밍</option>
-              </optgroup>
-              <optgroup label="교양">
-                <option>기초 영자신문 읽기</option>
-                <option>교양 러시아어</option>
-              </optgroup>
-            </select>
-          </div>
-          <hr>
 
-          <form>
-
-            <table class="table text-center table-bordered">
+          <form class="form">
+            <table class="table table-bordered text-center">
               <thead class="thead-light">
                 <tr>
-                  <th>번호</th>
-                  <th style="width: 700px">4</th>
+                  <th>과제 번호</th>
+                  <th style="width: 700px">3</th>
                 </tr>
               </thead>
-
               <tbody>
-                <form class="form">
-                  <tr>
-                    <td class="table-active">제목 </td>
-                    <td><input type="text" id="name" name="name" style="width: 600px"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-active">내용</td>
-                    <td><input type="text" id="ctt" name="ctt" style="width: 600px; height: 200px"></td>
-                  </tr>
-                  <tr>
-                    <td class="table-active">첨부파일 </td>
-                    <td>
-                      <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
-                        <input type="file" name="profile">
-                        <input type="submit">
-                      </form>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="table-active">만점</td>
-                    <td><input type="text" id="sco" name="sco"></td>
-                  </tr>
                 <tr>
-                  <td class="table-active">제출기한</td>
-                  <td><input type="text" id="per" name="per" style="width: 250px"></td>
+                  <td class="table-active">강좌 </td>
+                  <td>데이터베이스 캡스톤디자인</td>
                 </tr>
                 <tr>
-                  <td class="table-active">연장기한</td>
-                  <td><input type="text" id="per2" name="per2" style="width: 250px"></td>
+                  <td class="table-active">과제 제목 </td>
+                  <td>사용자 인터페이스</td>
                 </tr>
-              </tbody>
+                <tr>
+                  <td class="table-active">첨부파일 </td>
+                  <td>
+                    <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+                      <input type="file" name="profile">
+                      <input type="submit">
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-active">제출된 파일</td>
+                  <td>제출된 파일이 존재하지 않습니다.</td>
+                </tr>
             </table>
-
-
             <div style="float: right; display:inline-block; width: 900px;">
-              <button class="btn btn-primary mx-2 my-sm-0" type="button" style="width: 100px; float: right" onclick="location.href='professorlecture.html'">목록보기</button>
-              <button class="btn btn-primary my-2 my-sm-0" type="button" style="width: 100px; float: right" onclick="location.href='posting.html'">등록</button>
+              <button class="btn btn-primary mx-2 my-sm-0" type="button" style="width: 100px; float: right" onclick="location.href='lecture1.html'">목록보기</button>
+              <button class="btn btn-primary my-2 my-sm-0" type="button" style="width: 100px; float: right" onclick="location.href='studentposting.html'">제출</button>
             </div>
             <label for=""><br></label>
+          </form>
         </div>
-
-        </form>
       </div>
-    </div>
     </div>
   </main>
 </body>
